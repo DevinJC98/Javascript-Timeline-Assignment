@@ -1,0 +1,131 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    background-color: #222222;
+    color: white;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 10vh;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px black;
+}
+header h1
+{
+    font-size: 36px;
+    margin: 2%;
+  
+}
+
+header button
+{
+    margin: 2%;
+}
+
+main
+{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+#yearInfo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 0px dotted white;
+    width: 100%; 
+    margin-top: 2%;
+    
+
+}
+
+#poutinePic
+{
+    max-height: 60vh;
+    border-radius: 25px;
+    margin: 2.5%;
+    box-shadow: 0 0 10px 1px black;
+}
+
+#infoHolder
+{
+    margin: 2.5%;
+    width: 40%;
+    border: 0px dotted white;
+}
+
+#sectionTitle
+{
+    font-size: 26px;
+}
+
+#sectionDescription
+{
+    font-size: 20px;
+}
+
+#yearButtons
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5%;
+}
+
+button
+{
+    
+    width: 10vw;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+}
+
+/* BG Color swap */
+
+.bodycolor
+{
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+
+
+/*button states */
+
+.on
+{
+    box-shadow: -2px -2px 0 black, 2px 2px 0 #444444;
+}
+
+.off
+{
+    box-shadow: 2px 2px 0 black, -2px -2px 0 #444444;
+}
+
+.lightOn
+{
+    background-color: rgb(202, 202, 202);
+    box-shadow: -2px -2px 0 black, 2px 2px 0 white;
+    color: black;
+}
+
+.lightOffButton
+{
+    background-color: rgb(202, 202, 202);
+    box-shadow: 2px 2px 0 black, -2px -2px 0 white;
+    color:black;
+}
