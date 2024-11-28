@@ -8,6 +8,10 @@ body
     background-color: #222222;
     color: white;
 }
+#buttonex
+{
+    display: flex;
+}
 header
 {
     display: flex;
@@ -31,56 +35,41 @@ header button
 
 main
 {
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-height: 100vh;
-}
-
-#yearInfo
-{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: 
+    "a b";
     align-items: center;
     justify-content: center;
     border: 0px dotted white;
     width: 100%; 
-    margin-top: 2%;
-    
-
+    margin-top: 1%;
 }
 
 #poutinePic
 {
+    grid-area: a;
+    max-width: 40vw;
     max-height: 60vh;
     border-radius: 25px;
-    margin: 2.5%;
+    margin: 2.5vw;
     box-shadow: 0 0 10px 1px black;
 }
 
 #infoHolder
 {
-    margin: 2.5%;
-    width: 40%;
-    border: 0px dotted white;
+    grid-area: b;
+    max-width: 40vw;
+    margin: 2.5vw;
+    
 }
 
-#sectionTitle
+nav
 {
-    font-size: 26px;
-}
-
-#sectionDescription
-{
-    font-size: 20px;
-}
-
-#yearButtons
-{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: 2.5%;
+    margin: 0;
+    padding: 2.5%;
 }
 
 button
@@ -128,4 +117,82 @@ button
     background-color: rgb(202, 202, 202);
     box-shadow: 2px 2px 0 black, -2px -2px 0 white;
     color:black;
+}
+
+@media Screen and (max-width: 1024px) 
+{
+    
+
+    main
+    {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-top: 5%;
+    }
+    #yearButtons
+    {
+        grid-area: button;
+    }
+    header
+    {
+        max-height: 10vh;
+        padding: 2%;
+    }
+    header h1
+    {
+        font-size: 2em;
+    }
+    nav
+    {
+        max-height: 10vh;
+        padding-top: 5%;
+    }
+    #infoHolder
+    {
+        grid-area: info;
+        max-height: 40vh;
+        max-width: 80vw;
+    }
+    #infoHolder h2
+    {
+        font-size: 1.5em;
+    }
+    #infoHolder p
+    {
+        font-size: 1.3em;
+    }
+    #poutinePic
+    {
+        grid-area: pic;
+        max-width: 80vw;
+        max-height: 50vh;
+    }
+    button
+    {
+        width: 15vw;
+        padding: 2%;
+        text-align: center;
+        align-items: center;
+
+    }
+}
+
+@media Screen and (max-width: 768px) 
+{
+
+    header h1
+    {
+        font-size: 1.5em;
+    }
+
+    #infoHolder h2
+    {
+        font-size: 1em;
+    }
+
+    #infoHolder p
+    {
+        font-size: 0.8em;
+    }
 }
