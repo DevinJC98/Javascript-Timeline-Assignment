@@ -122,18 +122,14 @@ button
 @media Screen and (max-width: 1024px) 
 {
     
-
     main
     {
        display: flex;
-       flex-direction: column;
+       flex-direction: row;
        justify-content: center;
        margin-top: 5%;
     }
-    #yearButtons
-    {
-        grid-area: button;
-    }
+   
     header
     {
         max-height: 10vh;
@@ -148,12 +144,7 @@ button
         max-height: 10vh;
         padding-top: 5%;
     }
-    #infoHolder
-    {
-        grid-area: info;
-        max-height: 40vh;
-        max-width: 80vw;
-    }
+    
     #infoHolder h2
     {
         font-size: 1.5em;
@@ -186,6 +177,11 @@ button
         font-size: 1.5em;
     }
 
+    #infoHolder
+    {
+        max-height: 40vh;
+        max-width: 40vw;
+    }
     #infoHolder h2
     {
         font-size: 1em;
@@ -194,5 +190,12 @@ button
     #infoHolder p
     {
         font-size: 0.8em;
+    }
+    main
+    {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-top: 5%;
     }
 }
