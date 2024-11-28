@@ -180,7 +180,7 @@ button
     #infoHolder
     {
         max-height: 40vh;
-        width: 90vw;
+        max-width: 80vw;
     }
     #infoHolder h2
     {
