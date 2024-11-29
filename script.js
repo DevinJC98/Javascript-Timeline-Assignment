@@ -121,7 +121,7 @@ y3.addEventListener("click", function()
         y4.classList.replace("on", "off");
 
         pic.src = "Images/blep.jpg";
-        title.innerHTML = "Poutine's Third year";
+        title.innerHTML = "Poutine's Third Year";
         text.innerHTML = "At the tender age of two and a bit, Poutine had began calming down slightly. That being said, she still ruled her territory with an iron fist. Her middle of the night yells, and sharp clawed stabbings were only rivalled by her desire to fall asleep and wake herself up by stretching. This always caused her to stick out her tongue, which is the cutest thing she does."
     } 
 
