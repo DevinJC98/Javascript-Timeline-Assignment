@@ -1,11 +1,12 @@
 *
 {
     box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 body
 {
     margin: 0;
-    background-color: #222222;
+    background-color: #343434;
     color: white;
 }
 #buttonex
@@ -157,7 +158,7 @@ button
     {
         grid-area: pic;
         max-width: 80vw;
-        max-height: 50vh;
+        max-height: 65vh;
     }
     button
     {
